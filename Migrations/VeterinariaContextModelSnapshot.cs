@@ -105,6 +105,10 @@ namespace VeterinariaAPI.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
+                    b.Property<string>("FechaLote")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FechaVencimiento")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

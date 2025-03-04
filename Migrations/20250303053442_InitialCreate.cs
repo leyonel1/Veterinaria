@@ -19,7 +19,8 @@ namespace VeterinariaAPI.Migrations
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: false),
-                    FechaVencimiento = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    FechaVencimiento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FechaLote = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
